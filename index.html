@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+<center>
+	<h1 style="color:white;"> Calculator </h1>
+    <FORM name="Keypad" action="">
+		<input name="ReadOut" id="output" type="Text" size=24 value="0" readonly>
+    <table>
+		<tr>
+			<td><input id="b7" type="Button" value="7" onclick="NumPressed(7)"></td>
+			<td><input id="b8" type="Button" value="8" onclick="NumPressed(8)"></td>        
+			<td><input id="b9" type="Button" value="9" onclick="NumPressed(9)"></td>
+			<td><input id="b/" type="Button" value="/" onclick="Operation('/')"></td>
+		</tr>
+		
+		<tr>
+			<td><input id="b4" type="Button" value="4" onclick="NumPressed(4)"></td>
+			<td><input id="b5" type="Button" value="5"onclick="NumPressed(5)"></td>        
+			<td><input id="b6" type="Button" value="6" onclick="NumPressed(6)"></td>
+			<td><input id="b+" type="Button" value="+" onclick="Operation('+')"></td>
+		</tr>
+		
+		<tr>
+			<td><input id="b1" type="Button" value="1" onclick="NumPressed(1)"></td>
+			<td><input id="b2" type="Button" value="2" onclick="NumPressed(2)"></td>        
+			<td><input id="b3" type="Button" value="3" onclick="NumPressed(3)"></td>
+			<td><input id="b*" type="Button" value="*" onclick="Operation('*')"></td>
+		</tr>
+		
+		</table>
+			<input id="b0" type="Button" value="0" onclick="NumPressed(0)">    
+			<input id="bC" type="Button" value="C" onclick="Clear()">
+			<input id="b=" type="Button" value="=" onclick="Operation('=')">
+			<input id="b-" type="Button" value="-" onclick="Operation('-')">
+	</FORM>
+			<h5 style="color:white;"> By Miguel Medeiros </h5>
+</center>
+				<script src="script.js">
+</script>
+</body>
+</html>
